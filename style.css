@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: beige;
+    min-height: 711px;
+}
+.container > div{
+width: 50%;
+display: flex;
+flex-wrap: wrap;
+/* border: 2px solid black; */
+}
+.first{
+    width: 40%;
+    background-color: #9376E0;
+    /* border: 2px solid black; */
+    /* min-height: 600px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding-top: 35px;
+    color: white;
+}
+.first img{
+    width: 200px;
+    height: 250px;
+    border-radius: 15px;
+}
+.second{
+    width: 60%;
+    background-color: white;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding-top: 35px;
+}
+.invisible{
+    width: 80%;
+    /* min-height: 50px; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-wrap: wrap;
+    /* border: 2px solid black; */
+}
+.invisible > div{
+display: flex;
+justify-content: space-between;
+padding: 15px 0px 35px;
+flex-wrap: wrap;
+}
+.invisible > h1{
+    letter-spacing: 10px;
+}
+.invisible h2{
+    padding-bottom: 7px;
+}
+i{
+    background-color: #9376E0;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 20px;
+}
+section{
+    display: flex;
+    gap: 15px;
+    padding: 20px 0px 50px;
+}
+.invisible > div > div:nth-child(2){
+    width: 40%;
+}
+@media screen and (min-width: 300px) and (max-width: 767px) {
+.first img{
+        width: 150px;
+        height: 175px;
+        border-radius: 5px;
+}
+.first > h2{
+    font-size: 30px;
+}
+.first > p{
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+.container > div{
+    flex-direction: column;
+    width: 100%;
+    min-height: 711px;
+}
+.second h2{
+    font-size: 25px;
+}
+.second p{
+    font-size: 20px;
+}
+i{
+    padding: 15px;
+}
+.second h1{
+    letter-spacing: 3px;
+    font-size: 25px;
+}
+.first,.second{
+    width: 100%;
+    border-radius: 0px;
+}
+.invisible > div > div{
+    width: 100%;
+}
+.invisible div{
+    gap:15px;
+}
+.invisible > div > div:nth-child(2){
+    width: 100%;
+}
+}
+@media screen and (min-width: 768px) and (max-width: 1339px){
+    .container > div{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .first > h2{
+        font-size: 30px;
+    }
+    .first > p{
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+    .first,.second{
+        width: 80%;
+        border-radius: 0px;
+    }
+}
